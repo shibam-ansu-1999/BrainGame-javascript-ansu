@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Brain Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        background: #41295a;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .start_btn{
+        width: 140px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .start_btn button{
+        background-color: lightcyan;
+    }
+    .user_input{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+</style>
+
+<body>
+    <div id="full">
+        <div class="text-white" style="margin-right: auto;margin-left: auto;text-align: center">
+            <h1 class="text-white" style="font-weight: 600;font-size: 6vw;">Human Brain Game</h1>
+            <h4 class="text-white" style="font-size: 2vw">Do as many calculations is possible in 1 minute</h4><br>
+        </div>
+        <div class="start_btn">
+            <button class="start btn btn-lg">Start Game</button>
+        </div>
+        <h1 class="finalScore text-white text-md-center mt-4" style="font-size: 10vw;text-align: center">Your score is <small><span class="finalSpan"></span></small></h1>
+
+        <div class="container1" style="width: 90%;margin-left: auto;margin-right: auto;text-align: center">
+            <div class="row mt-5">
+                <div class="col-md-3 col-sm-3 col-3">
+                    <div class="card">
+                        <h2 class="text-md-center mt-2" style="font-size: 2vw">First Number</h2>
+                        <div class="firstNum card-body text-md-center" style="font-size: 4vw">4</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-3">
+                    <div class="card">
+                        <h2 class="text-md-center mt-2" style="font-size: 2vw">Operator</h2>
+                        <div  class="operator card-body text-md-center" style="font-size: 4vw">+</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-3">
+                    <div class="card">
+                        <h2 class="text-md-center mt-2" style="font-size: 2vw">Second Number</h2>
+                        <div  class="secondNum card-body text-md-center" style="font-size: 4vw">4</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-3">
+                    <div class="card">
+                        <h2 class="text-md-center mt-2" style="font-size: 2vw">Your Answer</h2>
+                        <input type="number"  class="user_input form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 justify-content-center">
+                <div class="col-md-3 col-sm-3 col-3">
+                    <div class="card">
+                        <h2 class="text-md-center mt-2" style="font-size: 2vw">Timer(Sec)</h2>
+                        <div class="time card-body text-md-center" style="font-size: 4vw">60</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-3">
+                    <div class="card">
+                        <h2 class="text-md-center mt-2" style="font-size: 2vw">Your Response</h2>
+                        <div class="response card-body text-md-center" style="font-size: 4vw"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-3">
+                    <div class="card">
+                        <h2 class="text-md-center mt-2" style="font-size: 2vw">Your Score</h2>
+                        <div class="score_display card-body text-md-center" style="font-size: 4vw">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
