@@ -1,6 +1,7 @@
 # BrainGame-javascript-ansu
 Click to Play : https://shibam-ansu-1999.github.io/BrainGame-javascript-ansu/
-This is a simple brain game of simple mathematical calculation 
+
+#This is a simple brain game of simple mathematical calculation 
 #
 Page load
 #
